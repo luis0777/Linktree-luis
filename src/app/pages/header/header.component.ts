@@ -1,8 +1,8 @@
-import { Component, ViewChild  } from '@angular/core';
+import { Component, ViewChild, inject  } from '@angular/core';
 import { SidebarModule } from 'primeng/sidebar';
 import { ButtonModule } from 'primeng/button';
 import { AvatarModule } from 'primeng/avatar';
-
+import { Router } from '@angular/router';
 
 
 
@@ -28,4 +28,13 @@ export class HeaderComponent {
     }
 
     sidebarVisible: boolean = false;
+
+    private _router = inject(Router);
+
+    navegationToRouteQuemSou(){
+      this._router.navigate(['quemsou'])
+    }
+    navegationToRouteHome(){
+      this._router.navigate([''])
+    }
 }
