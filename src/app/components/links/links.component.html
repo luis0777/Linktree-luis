@@ -1,14 +1,40 @@
-
-  <li >
-    <div class="card flex flex-wrap gap-3 justify-content-center p-2 w-full">
-      <p-button label="LINKEDLN" icon="pi pi-linkedin" [text]="true" [raised]="true"  size="large" (onClick)="redirectTo('https://www.linkedin.com/in/luis-felipe-da-silva-amorim/')" /></div>
-  </li>
-  <li>
-    <div class="card flex flex-wrap gap-3 justify-content-center p-2 ">
-      <p-button label="GIT HUB" icon="pi pi-github" [text]="true" [raised]="true" severity="contrast" size="large" (onClick)="redirectTo('https://github.com/luis0777')" /></div>
-  </li>
-  <li>
-    <div class="card flex flex-wrap gap-3 justify-content-center p-2">
-      <p-button label="INSTAGRAM" icon="pi pi-instagram" [text]="true" [raised]="true" severity="danger" size="large" (onClick)="redirectTo('https://www.instagram.com/luisfelipe__7')" /></div>
-  </li>
-
+<li class="list-none">
+  <div class="card flex flex-wrap gap-3 justify-content-center p-2 w-full ">
+    <p-button
+      label="LINKEDLN"
+      icon="pi pi-linkedin"
+      [text]="true"
+      [raised]="true"
+      size="large"
+      (onClick)="
+        redirectTo('https://www.linkedin.com/in/luis-felipe-da-silva-amorim/')
+      "
+    />
+  </div>
+</li>
+<li class="list-none">
+  <div class="card flex flex-wrap gap-3 justify-content-center p-2">
+    <p-button
+      label="GIT HUB"
+      icon="pi pi-github"
+      [text]="true"
+      [raised]="true"
+      severity="contrast"
+      size="large"
+      (onClick)="redirectTo('https://github.com/luis0777')"
+    />
+  </div>
+</li>
+<li class="list-none">
+  <div class="card flex flex-wrap gap-3 justify-content-center p-2">
+    <p-button
+      label="INSTAGRAM"
+      icon="pi pi-instagram"
+      [text]="true"
+      [raised]="true"
+      severity="danger"
+      size="large"
+      (onClick)="redirectTo('https://www.instagram.com/luisfelipe__7')"
+    />
+  </div>
+</li>
